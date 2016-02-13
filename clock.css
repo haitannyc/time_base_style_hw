@@ -1,0 +1,33 @@
+#headtext {
+  width: 500px;
+  text-align: center;
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-decoration: underline;
+}
+ul {
+  background-color:  rgba(91, 92, 92, 0.4);
+  border-radius: 12px;
+  border: 2px solid black;
+  width: 404px;
+  margin: 50px auto;
+   padding-left:16px;
+  font-family: 'Holtwood One SC', serif;
+
+}
+
+ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding:2px;
+  font-size: 40px;
+  text-align: center;
+  color: blue;
+}
+
+
+ul .colon {
+  color:  rgba(4, 255, 44, 1);
+
+}  
