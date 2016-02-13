@@ -9,11 +9,14 @@ setInterval(function () {
 
   $("#minutes").text(minutesToLeadZero);
   $("#seconds").text(secondsToLeadZero);
-  $("#milliseconds").text(dayTime.getMilliseconds());
+  $("#milliseconds").text(dayTime.getMilliseconds()).substr(-8);
 
   },100);
 
 // ----------------above is clock display
+
+// ---even minutes turn red---------
+
 
 setInterval(function () {
     var dayTime = new Date ();
@@ -44,7 +47,7 @@ setInterval(function () {
        console.log(rand);
       $('body').css( "background", rand);
       } 
-    },48000);
+    },25000);
 
    // change text color for ever hour change  
    // every hour minutes should equal 0
@@ -56,7 +59,8 @@ setInterval(function () {
 
    var rand = backgroundColors[Math.floor(Math.random() * backgroundColors.length)]; 
    
-   
+   // ----change clock color every hour----
+   // ---minutes should equal to 0 at every hour change
 
    if (hourColor  === 0)  {
      // setTimeout(function () {
